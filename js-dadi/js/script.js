@@ -34,6 +34,7 @@ function diceGame(){
     ulOne.innerHTML = ``;
     ulTwo.innerHTML = ``;
 
+    //ROLL ALL DICE FOR PLAYER ONE
     for(let i=0; i<playerOneDiceN; i++){
         let rolledDice = Math.floor(Math.random() * 6) +1;
         playerOneDice.push(rolledDice);
@@ -44,6 +45,7 @@ function diceGame(){
 
     let ulOneChildren = ulOne.childNodes;
 
+    //ROLL ALL DICE FOR PLAYER TWO
     for(let i=0; i<playerTwoDiceN; i++){
         let rolledDice = Math.floor(Math.random() * 6) +1;
         playerTwoDice.push(rolledDice);
@@ -54,6 +56,7 @@ function diceGame(){
 
     let ulTwoChildren = ulTwo.childNodes;
 
+    //GAME RESOLUTION SECTION; WHO WON?
     if(playerOneSum == playerTwoSum){
         winner.innerText = `It's a Draw!`;
     }
@@ -71,4 +74,6 @@ function diceGame(){
             }
         }
     }
+
+    //RESOLVE BET: HOW MUCH DID THE WINNER WIN?
 }

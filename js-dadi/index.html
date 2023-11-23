@@ -12,8 +12,14 @@
         <div class="container my-5">
             <div class="row justify-content-around">
                 <div class="col-12 col-md-4">
-                    <label for="playerOne">How many dice do you want?</label>
-                    <input type="number" min="1" max="6" class="form-control" id="playerOne">
+                    <div>
+                        <label for="playerOne" class="form-label">How many dice do you want?</label>
+                        <input type="number" min="1" max="6" class="form-control" id="playerOne">
+                    </div>
+                    <div>
+                        <label for="betOne" class="form-label">How much will you bet? ( &euro; )</label>
+                        <input type="number" min="1" class="form-control" id="betOne">
+                    </div>
                     <div id="playerOneResults" class="list-group my-4"></div>
                 </div>
                 <div class="col-12 col-md-2">
@@ -21,8 +27,14 @@
                     <div id="winner"></div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <label for="playerTwo">How many dice do you want?</label>
-                    <input type="number" min="1" max="6" class="form-control" id="playerTwo">
+                    <div>
+                        <label for="playerTwo">How many dice do you want?</label>
+                        <input type="number" min="1" max="6" class="form-control" id="playerTwo">
+                    </div>
+                    <div>
+                        <label for="betTwo" class="form-label">How much will you bet? ( &euro; )</label>
+                        <input type="number" min="1" class="form-control" id="betTwo">
+                    </div>
                     <div id="playerTwoResults" class="list-group my-4"></div>
                 </div>
             </div>
