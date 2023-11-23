@@ -9,16 +9,22 @@
         <script src="https://kit.fontawesome.com/dcdaab4f9f.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container my-5">
             <div class="row justify-content-around">
-<!--                 <div class="col-12 col-md-4">
-                    <label for="playerOne">How many dice you want?</label>
+                <div class="col-12 col-md-4">
+                    <label for="playerOne">How many dice do you want?</label>
                     <input type="number" min="1" max="6" class="form-control" id="playerOne">
+                    <div id="playerOneResults" class="list-group my-4"></div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="btn btn-primary" id="rollIt">Confirm?</div>
+                    <div id="winner"></div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <label for="playerTwo">How many dice you want?</label>
+                    <label for="playerTwo">How many dice do you want?</label>
                     <input type="number" min="1" max="6" class="form-control" id="playerTwo">
-                </div> -->
+                    <div id="playerTwoResults" class="list-group my-4"></div>
+                </div>
             </div>
         </div>
     <script type="text/javascript" src="./js/script.js"></script>
